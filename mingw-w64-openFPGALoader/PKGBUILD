@@ -28,7 +28,7 @@ build() {
   mkdir -p build-${MSYSTEM} && cd build-${MSYSTEM}
 
   MSYS2_ARG_CONV_EXCL=- cmake \
-    -G "MSYS Makefiles" \
+    -G "Unix Makefiles" \
     -DCMAKE_INSTALL_PREFIX="${MINGW_PREFIX}" \
     ../"${_realname}-${pkgver}"
 

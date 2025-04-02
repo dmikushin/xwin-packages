@@ -98,7 +98,7 @@ build() {
   MSYS2_ARG_CONV_EXCL="-DCL_PREFIX=" \
   ${MINGW_PREFIX}/bin/cmake \
     -Wno-dev \
-    -G"MSYS Makefiles" \
+    -G"Unix Makefiles" \
     -DCL_PREFIX=${MINGW_PREFIX} \
     -DENABLE_CLANG=1 \
     -DWITH_WEBVIEW=1 \

@@ -35,7 +35,7 @@ build() {
 
   MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=" \
     ${MINGW_PREFIX}/bin/cmake \
-      -G'MSYS Makefiles' \
+      -G'Unix Makefiles' \
       -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
       "${extra_config[@]}" \
       -DBUILD_SHARED_LIBS=OFF \
@@ -49,7 +49,7 @@ build() {
 
   MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=" \
     ${MINGW_PREFIX}/bin/cmake \
-      -G'MSYS Makefiles' \
+      -G'Unix Makefiles' \
       -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
       "${extra_config[@]}" \
       -DBUILD_SHARED_LIBS=ON \

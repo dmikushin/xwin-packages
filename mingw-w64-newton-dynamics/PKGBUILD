@@ -39,7 +39,7 @@ build() {
     ${MINGW_PREFIX}/bin/cmake \
     -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
     -DCMAKE_BUILD_TYPE="Release"\
-    -G"MSYS Makefiles" \
+    -G"Unix Makefiles" \
     -DNEWTON_DOUBLE_PRECISION=ON \
     -DNEWTON_BUILD_SHARED_LIBS=OFF \
     -DNEWTON_WITH_AVX_PLUGIN=OFF \
@@ -56,7 +56,7 @@ build() {
     ${MINGW_PREFIX}/bin/cmake \
     -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
     -DCMAKE_BUILD_TYPE="Release"\
-    -G"MSYS Makefiles" \
+    -G"Unix Makefiles" \
     -DNEWTON_DOUBLE_PRECISION=ON \
     -DNEWTON_WITH_SSE4_PLUGIN=OFF \
     -DNEWTON_WITH_AVX2_PLUGIN=OFF \

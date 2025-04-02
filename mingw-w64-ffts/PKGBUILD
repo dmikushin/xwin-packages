@@ -38,7 +38,7 @@ build() {
   mkdir build
   cd build
   MSYS2_ARG_CONV_EXCL=-DCMAKE_INSTALL_PREFIX= cmake \
-    -G "MSYS Makefiles" \
+    -G "Unix Makefiles" \
     -DCMAKE_INSTALL_PREFIX="${MINGW_PREFIX}" \
     -DENABLE_SHARED=ON \
     ../
