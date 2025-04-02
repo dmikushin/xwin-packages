@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  clang-xwin:
+    image: clang-xwin
+    container_name: xwin-packages
+    hostname: xwin-packages
+    ports:
+      - "22228:22221"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ${PWD}:${PWD}
+    working_dir: ${PWD}
+    environment:
+      - PWD=${PWD}
+    restart: always
+    stdin_open: true
+    tty: true
